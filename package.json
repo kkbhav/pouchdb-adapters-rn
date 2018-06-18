@@ -48,7 +48,7 @@
     "url": "git+https://github.com/kkbhav/pouchdb-adapters-rn.git"
   },
   "scripts": {
-    "postinstall": "node ./setup.js",
+    "postinstall": "node ./lib/setup.js",
     "updtr": "updtr --save-exact"
   },
   "standard": {
