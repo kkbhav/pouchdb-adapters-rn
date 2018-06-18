@@ -41,14 +41,14 @@
   "homepage": "https://github.com/kkbhav/pouchdb-adapters-rn",
   "keywords": [],
   "license": "Apache-2.0",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "name": "pouchdb-adapters-rn",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kkbhav/pouchdb-adapters-rn.git"
   },
   "scripts": {
-    "postinstall": "node ./lib/setup.js",
+    "postinstall": "node ./setup.js",
     "updtr": "updtr --save-exact"
   },
   "standard": {
