@@ -13,8 +13,10 @@
     "pouchdb-ajax": "6.4.1",
     "pouchdb-binary-utils": "6.4.1",
     "pouchdb-checkpointer": "6.4.1",
+    "pouchdb-core": "6.4.1",
     "pouchdb-errors": "6.4.1",
     "pouchdb-generate-replication-id": "6.4.1",
+    "pouchdb-mapreduce": "6.4.1",
     "pouchdb-promise": "6.4.1",
     "pouchdb-utils": "6.4.1",
     "pouchdb-json": "6.4.1",
@@ -24,7 +26,8 @@
     "request": "2.80.0"
   },
   "peerDependencies": {
-    "react-native-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work"
+    "react-native-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work",
+    "react-native-sqlite-2": "^1.6.0"
   },
   "devDependencies": {
     "standard": "^10.0.2"
@@ -35,14 +38,23 @@
     "dist",
     "tonic-example.js"
   ],
-  "homepage": "https://github.com/kkbhav/pouchdb-adapter-rn-http",
+  "homepage": "https://github.com/kkbhav/pouchdb-adapters-rn",
   "keywords": [],
   "license": "Apache-2.0",
   "main": "./lib/index.js",
   "name": "pouchdb-adapters-rn",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kkbhav/pouchdb-adapter-rn-http.git"
+    "url": "git+https://github.com/kkbhav/pouchdb-adapters-rn.git"
+  },
+  "scripts": {
+    "postinstall": "node ./setup.js",
+    "updtr": "updtr --save-exact"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/**"
+    ]
   },
   "version": "6.4.1"
 }
