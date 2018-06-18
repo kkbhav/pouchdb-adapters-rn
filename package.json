@@ -33,11 +33,6 @@
     "standard": "^10.0.2"
   },
   "description": "PouchDB adapters for ReactNative using HTTP (e.g. a remote CouchDB) and SQLite as its data store",
-  "files": [
-    "lib",
-    "dist",
-    "tonic-example.js"
-  ],
   "homepage": "https://github.com/kkbhav/pouchdb-adapters-rn",
   "keywords": [],
   "license": "Apache-2.0",
