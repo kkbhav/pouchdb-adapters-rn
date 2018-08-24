@@ -1,12 +1,19 @@
-import SQLite from 'react-native-sqlite-2'
-import remote from './lib/remote-adapter'
-import sql from './lib/sqlite'
+'use strict';
 
-const SQLiteAdapter = sql(SQLite)
+import PouchDB from 'pouchdb-core';
+import mapreduce from 'pouchdb-mapreduce';
+import SQLite from 'react-native-sqlite-2';
+import remote from './lib/remote-adapter';
+import replication from './lib/replication';
+import sql from './lib/sqlite';
 
-function addAdapter (PouchDB) {
-  remote(PouchDB)
-  SQLiteAdapter(PouchDB)
+function addAdapter(PDB) {
+  const SQLiteAdapter = sql(SQLite);
+  remote(PDB);
+  SQLiteAdapter(PDB);
+  replication(PDB);
 }
 
-export default addAdapter
+PouchDB.plugin(addAdapter).plugin(mapreduce);
+
+export default PouchDB;
