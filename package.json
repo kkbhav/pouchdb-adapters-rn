@@ -17,12 +17,10 @@
     "pouchdb-binary-utils": "7.0.0",
     "pouchdb-checkpointer": "7.0.0",
     "pouchdb-collections": "7.0.0",
-    "pouchdb-core": "7.0.0",
     "pouchdb-errors": "7.0.0",
     "pouchdb-generate-replication-id": "7.0.0",
     "pouchdb-utils": "7.0.0",
     "pouchdb-json": "7.0.0",
-    "pouchdb-mapreduce": "7.0.0",
     "pouchdb-merge": "7.0.0",
     "pouchdb-md5": "7.0.0"
   },
