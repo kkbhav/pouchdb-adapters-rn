@@ -3,6 +3,10 @@
     "name": "Bhavesh Khandelwal",
     "email": "bhav.khandelwal@gmail.com"
   },
+  "scripts": {
+    "updtr": "updtr --save-exact",
+    "postinstall": "node ./setup.js"
+  },
   "bugs": {
     "url": "https://github.com/kkbhav/pouchdb-adapter-rn-http/issues"
   },
@@ -10,17 +14,17 @@
     "argsarray": "0.0.1",
     "buffer-from": "0.1.1",
     "inherits": "2.0.3",
-    "pouchdb-ajax": "6.4.1",
-    "pouchdb-binary-utils": "6.4.1",
-    "pouchdb-checkpointer": "6.4.1",
-    "pouchdb-errors": "6.4.1",
-    "pouchdb-generate-replication-id": "6.4.1",
-    "pouchdb-promise": "6.4.1",
-    "pouchdb-utils": "6.4.1",
-    "pouchdb-json": "6.4.1",
-    "pouchdb-merge": "6.4.1",
-    "pouchdb-collections": "6.4.1",
-    "pouchdb-md5": "6.4.1",
+    "pouchdb-ajax": "7.0.0",
+    "pouchdb-binary-utils": "7.0.0",
+    "pouchdb-checkpointer": "7.0.0",
+    "pouchdb-errors": "7.0.0",
+    "pouchdb-generate-replication-id": "7.0.0",
+    "pouchdb-promise": "7.0.0",
+    "pouchdb-utils": "7.0.0",
+    "pouchdb-json": "7.0.0",
+    "pouchdb-merge": "7.0.0",
+    "pouchdb-collections": "7.0.0",
+    "pouchdb-md5": "7.0.0",
     "request": "2.80.0"
   },
   "peerDependencies": {
@@ -45,5 +49,5 @@
       "node_modules/**"
     ]
   },
-  "version": "6.4.1"
+  "version": "7.0.0"
 }
