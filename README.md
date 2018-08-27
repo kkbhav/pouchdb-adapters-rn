@@ -1,38 +1,40 @@
-pouchdb-adapter-rn-http
+pouchdb-adapter-rn
 ======
 
 PouchDB adapter for ReactNative using HTTP (e.g. a remote CouchDB or CouchDB-like database) or SQLite as its data store.
 
-### Prerequisites
+## Prerequisites
 
 - [pouchdb-react-native](https://github.com/stockulus/pouchdb-react-native)
 - A SQLite module
-  - [react-native-sqlite-2 (recommended)](https://github.com/noradaiko/react-native-sqlite-2)
-  - [react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage)
+  - [react-native-sqlite-2](https://github.com/noradaiko/react-native-sqlite-2)
 - [react-native-fetch-blob](https://github.com/kkbhav/react-native-fetch-blob)
-  
-### Usage
 
+## Installtion
 ```bash
-react-native install react-native-sqlite-2
-react-native link react-native-sqlite-2
-npm install https://github.com/kkbhav/pouchdb-adapters-rn.git --save
+npm install --save react-native-sqlite-2
+npm install --save https://github.com/kkbhav/pouchdb-adapters-rn.git 
 npm install --save https://github.com/kkbhav/react-native-fetch-blob.git
 react-native link react-native-fetch-blob
+react-native link react-native-sqlite-2
+react-native link react-native-sqlite-2
 ```
+#### - Extra step for iOS
+
+In Xcode, add `libsqlite3.tbd` to your project's `Build Phases` ➜ `Link Binary With Libraries`.
+
+## Usage
 
 ```js
 import PouchDB from 'pouchdb-react-native'
-import { createSQLite, adapters } from 'pouchdb-adapter-rn';
-import SQLite from 'react-native-sqlite-2';
+import RNAdapter from 'pouchdb-adapter-rn';
 
-createSQLite(SQLite);
-PouchDB.plugin(adapters);
-var db = new PouchDB('mydb', { adapter: 'react-native-sqlite '});
+PouchDB.plugin(RNAdapter);
+var db = new PouchDB('mydb', { adapter: 'pouchdb-adapter-rn'});
 var remote = new PouchDB('http://127.0.0.1:5984/mydb');
 ```
 
-### Updated API For RemoteDB
+### - Updated API For RemoteDB
 
 1. **All API's calls will return attachment as base64 string or a file-uri**
 
@@ -45,7 +47,7 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
     - extra options values(optional)  
         - path: string, Path to save the file(optional, if not passed base64 string will be returned)  
 
-### Updated API For LocalDB
+### - Updated API For LocalDB
 
 1. **All API's calls will return attachment as base64 string or a file-uri**
 

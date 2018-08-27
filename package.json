@@ -3,6 +3,10 @@
     "name": "Bhavesh Khandelwal",
     "email": "bhav.khandelwal@gmail.com"
   },
+  "scripts": {
+    "updtr": "updtr --save-exact",
+    "postinstall": "node ./setup.js"
+  },
   "bugs": {
     "url": "https://github.com/kkbhav/pouchdb-adapter-rn-http/issues"
   },
@@ -10,24 +14,31 @@
     "argsarray": "0.0.1",
     "buffer-from": "0.1.1",
     "inherits": "2.0.3",
-    "pouchdb-ajax": "6.4.1",
-    "pouchdb-binary-utils": "6.4.1",
-    "pouchdb-checkpointer": "6.4.1",
-    "pouchdb-errors": "6.4.1",
-    "pouchdb-generate-replication-id": "6.4.1",
-    "pouchdb-promise": "6.4.1",
-    "pouchdb-utils": "6.4.1",
-    "pouchdb-json": "6.4.1",
-    "pouchdb-merge": "6.4.1",
-    "pouchdb-collections": "6.4.1",
-    "pouchdb-md5": "6.4.1",
-    "request": "2.80.0"
+    "pouchdb-binary-utils": "7.0.0",
+    "pouchdb-checkpointer": "7.0.0",
+    "pouchdb-collections": "7.0.0",
+    "pouchdb-errors": "7.0.0",
+    "pouchdb-generate-replication-id": "7.0.0",
+    "pouchdb-utils": "7.0.0",
+    "pouchdb-json": "7.0.0",
+    "pouchdb-merge": "7.0.0",
+    "pouchdb-md5": "7.0.0"
   },
   "peerDependencies": {
     "react-native-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work",
     "react-native-sqlite-2": "^1.6.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import-order-autofix": "^0.8.3",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
     "standard": "^10.0.2"
   },
   "description": "PouchDB adapters for ReactNative using HTTP (e.g. a remote CouchDB) and SQLite as its data store",
@@ -45,5 +56,8 @@
       "node_modules/**"
     ]
   },
-  "version": "6.4.1"
+  "eslintIgnore": [
+    "*.json"
+  ],
+  "version": "7.0.0"
 }
