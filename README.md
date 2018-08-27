@@ -45,7 +45,10 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
     
 3. **remote.get(docId, options, callback)**  
     - extra options values(optional)  
-        - path: string, Path to save the file(optional, if not passed base64 string will be returned)  
+        - path: string, Path to save the file(optional, if not passed base64 string will be returned)
+        
+4. **remote.putAttachment(docId, attachmentId, [rev], attachment, type, [callback])**
+    - attachment: file-uri or base64(cannot process blob types)  
 
 ### - Updated API For LocalDB
 
@@ -62,6 +65,10 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
 4. **db.allDocs(options)**
     - extra options values(optional)
         - path: boolean to return attachment as fileUri(optional, if not passed base64 string will be returned)
+        
+5. **db.putAttachment(docId, attachmentId, [rev], attachment, type, [callback])**
+    - attachment: file-uri or base64(cannot process blob types)
+        
         
         
         
