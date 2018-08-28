@@ -3,6 +3,8 @@ pouchdb-adapter-rn
 
 PouchDB adapter for ReactNative using HTTP (e.g. a remote CouchDB or CouchDB-like database) or SQLite as its data store.
 
+This package has made changes in pouchdb-adapter-websql and pouch-adapter-http for integrating with react-native.
+
 ## Prerequisites
 
 - [pouchdb-react-native](https://github.com/stockulus/pouchdb-react-native)
