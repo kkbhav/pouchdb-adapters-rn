@@ -10,14 +10,14 @@ This package has made changes in pouchdb-adapter-websql and pouch-adapter-http f
 - [pouchdb-react-native](https://github.com/stockulus/pouchdb-react-native)
 - A SQLite module
   - [react-native-sqlite-2](https://github.com/noradaiko/react-native-sqlite-2)
-- [react-native-fetch-blob](https://github.com/kkbhav/react-native-fetch-blob)
+- [rn-fetch-blob](https://github.com/kkbhav/react-native-fetch-blob/tree/work)
 
 ## Installtion
 ```bash
 npm install --save react-native-sqlite-2
-npm install --save https://github.com/kkbhav/pouchdb-adapters-rn.git 
+npm install --save https://github.com/kkbhav/pouchdb-adapters-rn.git
 npm install --save https://github.com/kkbhav/react-native-fetch-blob.git
-react-native link react-native-fetch-blob
+react-native link rn-fetch-blob
 react-native link react-native-sqlite-2
 react-native link react-native-sqlite-2
 ```
@@ -40,42 +40,42 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
 
 1. **All API's calls will return attachment as base64 string or a file-uri**
 
-2. **remote.getAttachment(docId, attachmentId, options, callback)**  
-    - extra options values(optional) 
-        - path: string, Path to save the file(optional, if not passed base64 string will be returned)  
-        - name: name of the file(optional, only used when file parameter is passed)
-    
-3. **remote.get(docId, options, callback)**  
-    - extra options values(optional)  
+2. **remote.getAttachment(docId, attachmentId, options, callback)**
+    - extra options values(optional)
         - path: string, Path to save the file(optional, if not passed base64 string will be returned)
-        
+        - name: name of the file(optional, only used when file parameter is passed)
+
+3. **remote.get(docId, options, callback)**
+    - extra options values(optional)
+        - path: string, Path to save the file(optional, if not passed base64 string will be returned)
+
 4. **remote.putAttachment(docId, attachmentId, [rev], attachment, type, [callback])**
-    - attachment: file-uri or base64(cannot process blob types)  
+    - attachment: file-uri or base64(cannot process blob types)
 
 ### - Updated API For LocalDB
 
 1. **All API's calls will return attachment as base64 string or a file-uri**
 
-2. **db.getAttachment(docId, attachmentId, options, callback)**  
-    - extra options values(optional) 
-        - path: boolean to return attachment as fileUri(optional, if not passed base64 string will be returned)  
-    
-3. **db.get(docId, options, callback)**  
-    - extra options values(optional)  
+2. **db.getAttachment(docId, attachmentId, options, callback)**
+    - extra options values(optional)
         - path: boolean to return attachment as fileUri(optional, if not passed base64 string will be returned)
-        
+
+3. **db.get(docId, options, callback)**
+    - extra options values(optional)
+        - path: boolean to return attachment as fileUri(optional, if not passed base64 string will be returned)
+
 4. **db.allDocs(options)**
     - extra options values(optional)
         - path: boolean to return attachment as fileUri(optional, if not passed base64 string will be returned)
-        
+
 5. **db.putAttachment(docId, attachmentId, [rev], attachment, type, [callback])**
     - attachment: file-uri or base64(cannot process blob types)
-        
-        
-        
-        
-  
-    
+
+
+
+
+
+
 
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).
 

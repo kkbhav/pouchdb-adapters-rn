@@ -25,7 +25,7 @@
     "pouchdb-md5": "7.0.0"
   },
   "peerDependencies": {
-    "react-native-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work",
+    "rn-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work",
     "react-native-sqlite-2": "^1.6.0"
   },
   "devDependencies": {
