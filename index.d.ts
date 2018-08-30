@@ -1,6 +1,6 @@
 /// <reference types="pouchdb-core" />
 
-declare module "pouchdb-react-native" {
+declare module "pouchdb-adapters-rn" {
     const pouchdbPlugin: PouchDB.Static;
     export default pouchdbPlugin;
 }
