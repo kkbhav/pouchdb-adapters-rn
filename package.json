@@ -13,6 +13,7 @@
   "dependencies": {
     "argsarray": "0.0.1",
     "atob": "2.1.1",
+    "blob-polyfill": "3.0.20180112",
     "btoa": "1.2.1",
     "buffer": "5.2.0",
     "buffer-from": "0.1.1",
@@ -25,6 +26,7 @@
     "pouchdb-generate-replication-id": "7.0.0",
     "pouchdb-utils": "7.0.0",
     "pouchdb-json": "7.0.0",
+    "pouchdb-mapreduce": "7.0.0",
     "pouchdb-merge": "7.0.0",
     "pouchdb-md5": "7.0.0"
   },
