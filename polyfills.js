@@ -9,4 +9,4 @@ require('blob-polyfill');
 if (!process.version) {
   process.version = 'core-js';
 }
-process.nextTick = process.nextTick || setImmediate;
+process.nextTick = process.nextTick || (fn => setTimeout(fn, 0));
