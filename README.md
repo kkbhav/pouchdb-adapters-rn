@@ -15,7 +15,7 @@ This package has made changes in pouchdb-adapter-websql and pouch-adapter-http f
 ```bash
 npm install --save react-native-sqlite-2
 npm install --save https://github.com/kkbhav/pouchdb-adapters-rn.git
-npm install --save https://github.com/kkbhav/react-native-fetch-blob.git
+npm install --save https://github.com/kkbhav/react-native-fetch-blob.git#work
 react-native link rn-fetch-blob
 react-native link react-native-sqlite-2
 ```
