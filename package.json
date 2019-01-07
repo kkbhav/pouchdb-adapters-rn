@@ -8,7 +8,7 @@
     "postinstall": "node ./setup.js"
   },
   "bugs": {
-    "url": "https://github.com/kkbhav/pouchdb-adapter-rn-http/issues"
+    "url": "https://github.com/kkbhav/pouchdb-adapters-rn/issues"
   },
   "dependencies": {
     "argsarray": "0.0.1",
@@ -49,8 +49,15 @@
   },
   "description": "PouchDB adapters for ReactNative using HTTP (e.g. a remote CouchDB) and SQLite as its data store",
   "homepage": "https://github.com/kkbhav/pouchdb-adapters-rn",
-  "keywords": [],
-  "license": "Apache-2.0",
+  "keywords": [
+    "pouchdb",
+    "react-native",
+    "react",
+    "adapter",
+    "sqlite",
+    "pouchdb-adapter-rn"
+  ],
+  "license": "MIT",
   "main": "./index.js",
   "name": "pouchdb-adapters-rn",
   "repository": {
@@ -65,5 +72,5 @@
   "eslintIgnore": [
     "*.json"
   ],
-  "version": "7.0.0"
+  "version": "1.0.0"
 }

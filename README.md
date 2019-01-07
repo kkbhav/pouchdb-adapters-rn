@@ -3,7 +3,9 @@ pouchdb-adapter-rn
 
 PouchDB adapter for ReactNative using HTTP (e.g. a remote CouchDB or CouchDB-like database) or SQLite as its data store.
 
-This package has made changes in pouchdb-adapter-websql and pouch-adapter-http for compatibility with react-native.
+This package has made changes in pouchdb-adapter-websql and pouch-adapter-http for compatibility with react-native. 
+
+It supports PouchDB version 7.0.0
 
 ## Prerequisites
 
@@ -124,3 +126,4 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
 
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).
 
+Supports PouchDB version 7.0.0

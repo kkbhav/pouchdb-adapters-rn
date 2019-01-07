@@ -1,0 +1,9 @@
+.babelrc
+.eslintrc
+.eslintrc.json
+.flowconfig
+.gitignore
+.gitattributes
+.idea/*
+package-lock.json
+original-adapters/*
