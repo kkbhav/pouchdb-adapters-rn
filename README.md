@@ -1,11 +1,11 @@
-pouchdb-adapter-rn
+pouchdb-adapters-rn
 ======
 
 PouchDB adapter for ReactNative using HTTP (e.g. a remote CouchDB or CouchDB-like database) or SQLite as its data store.
 
 This package has made changes in pouchdb-adapter-websql and pouch-adapter-http for compatibility with react-native. 
 
-It supports PouchDB version 7.0.0
+It supports PouchDB till version **7.0.0**
 
 ## Prerequisites
 
@@ -13,10 +13,10 @@ It supports PouchDB version 7.0.0
   - [react-native-sqlite-2](https://github.com/noradaiko/react-native-sqlite-2)
 - [rn-fetch-blob](https://github.com/kkbhav/react-native-fetch-blob/tree/work)
 
-## Installtion
+## Installation
 ```bash
-npm install --save react-native-sqlite-2
-npm install --save https://github.com/kkbhav/pouchdb-adapters-rn.git
+npm install --save-exact pouchdb-adapters-rn
+npm install --save-exact react-native-sqlite-2@1.6.0
 npm install --save https://github.com/kkbhav/react-native-fetch-blob.git#work
 react-native link rn-fetch-blob
 react-native link react-native-sqlite-2
@@ -28,10 +28,13 @@ In Xcode, add `libsqlite3.tbd` to your project's `Build Phases` ➜ `Link Binary
 ## Usage
 
 ```js
-import PouchDB from 'pouchdb-adapter-rn';
+import PouchDB from 'pouchdb-adapters-rn';
 
-var db = new PouchDB('mydb', { adapter: 'pouchdb-adapter-rn'});
+var db = new PouchDB('mydb', { adapter: 'pouchdb-adapters-rn'});
+// or
 var remote = new PouchDB('http://127.0.0.1:5984/mydb');
+// or
+var remote1 = new PouchDB('http://127.0.0.1:5984/mydb', { adapter: 'pouchdb-adapters-rn-http'});
 ```
 
 ### - Updated API For RemoteDB
@@ -64,7 +67,7 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
        },
      }
     }
-    db.put(doc);
+    remote.put(doc);
     ```
 
 ### - Updated API For LocalDB
@@ -126,4 +129,4 @@ var remote = new PouchDB('http://127.0.0.1:5984/mydb');
 
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).
 
-Supports PouchDB version 7.0.0
+Supports PouchDB till version 7.0.0
