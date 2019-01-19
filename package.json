@@ -28,7 +28,8 @@
     "pouchdb-json": "7.0.0",
     "pouchdb-mapreduce": "7.0.0",
     "pouchdb-merge": "7.0.0",
-    "pouchdb-md5": "7.0.0"
+    "pouchdb-md5": "7.0.0",
+    "react-native-mime-types": "^2.2.1"
   },
   "peerDependencies": {
     "rn-fetch-blob": "git+https://github.com/kkbhav/react-native-fetch-blob.git#work",
