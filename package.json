@@ -53,11 +53,13 @@
   "keywords": [
     "pouchdb",
     "react-native",
+    "react native",
     "react",
     "adapter",
     "adapters",
     "sqlite",
-    "pouchdb-adapters-rn"
+    "pouchdb-adapters-rn",
+    "pouch"
   ],
   "license": "MIT",
   "main": "./index.js",
@@ -74,5 +76,5 @@
   "eslintIgnore": [
     "*.json"
   ],
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
