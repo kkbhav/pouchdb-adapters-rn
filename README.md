@@ -1,6 +1,5 @@
-pouchdb-adapters-rn
+pouchdb-adapters-rn [![npm version](https://badge.fury.io/js/pouchdb-adapters-rn.svg)](https://badge.fury.io/js/pouchdb-adapters-rn)
 ======
-
 PouchDB adapter for ReactNative using HTTP (e.g. a remote CouchDB or CouchDB-like database) or SQLite as its data store.
 
 This package has made changes in pouchdb-adapter-websql and pouch-adapter-http for compatibility with react-native. 
